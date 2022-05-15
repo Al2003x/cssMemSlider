@@ -163,14 +163,17 @@ img {
   }
 
   .slider-block {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-bottom: 4rem;
+  }
+
+  .slider-controls {
+    margin-bottom: 2.5rem;
   }
 
   .slider-text {
     width: 100%;
-    margin-bottom: 3rem;
-    text-align: center;
+    text-align: left;
   }
 }
 
