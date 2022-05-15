@@ -48,14 +48,14 @@ img {
 
 .slider__img {
   width: 100%;
-  height: auto;
+  height: 70rem;
   object-fit: cover;
-  border-radius: 2rem;
 }
 
 .slider-block {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10rem;
 }
 
 .slider-controls {
@@ -86,10 +86,42 @@ img {
 
 .slider-text__wrapper {
   display: flex;
-  width: 500%;
+  width: 400%;
 }
 
 .slider-text__desc {
   width: 100%;
   font-size: 2.5rem;
+}
+
+#btn-1:checked ~ .slider__sliders > .slider__wrapper > .slide {
+  transform: translateX(0);
+}
+
+#btn-2:checked ~ .slider__sliders > .slider__wrapper > .slide {
+  transform: translateX(-100%);
+}
+
+#btn-3:checked ~ .slider__sliders > .slider__wrapper > .slide {
+  transform: translateX(-200%);
+}
+
+#btn-4:checked ~ .slider__sliders > .slider__wrapper > .slide {
+  transform: translateX(-300%);
+}
+
+#btn-1:checked ~ .slider-block > .slider-text > .slider-text__wrapper > .slider-text__desc {
+  transform: translateX(0);
+}
+
+#btn-2:checked ~ .slider-block > .slider-text > .slider-text__wrapper > .slider-text__desc {
+  transform: translateX(-100%);
+}
+
+#btn-3:checked ~ .slider-block > .slider-text > .slider-text__wrapper > .slider-text__desc {
+  transform: translateX(-200%);
+}
+
+#btn-4:checked ~ .slider-block > .slider-text > .slider-text__wrapper > .slider-text__desc {
+  transform: translateX(-300%);
 }
