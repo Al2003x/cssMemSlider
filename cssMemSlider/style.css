@@ -1,0 +1,95 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #283136;
+  background-color: antiquewhite;
+}
+
+img {
+  object-fit: cover;
+}
+
+.slider-controls__input {
+  display: none;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.slider__sliders {
+  width: 100%;
+  height: auto;
+  margin: 5rem 0;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slider__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.slider-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-controls__label {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+  background-color: burlywood;
+  border: .2rem solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls__label:hover {
+  background-color:cadetblue ;
+  border-color:coral;
+}
+
+.slider-text {
+  width: 70%;
+  overflow: hidden;
+}
+
+.slider-text__wrapper {
+  display: flex;
+  width: 500%;
+}
+
+.slider-text__desc {
+  width: 100%;
+  font-size: 2.5rem;
+}

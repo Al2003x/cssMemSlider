@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>cssMemSlider</title>
-</head>
-<body>
-
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider__sliders">
+        <div class="slider__wrapper">
+          <div class="slide">
+            <img
+              loading="lazy"
+              src="./img/menu-1.jpg"
+              class="slider__img"
+              alt="Первый слайд"
+            />
+          </div>
+          <div class="slide">
+            <img
+              loading="lazy"
+              src="./img/menu-2.jpg"
+              class="slider__img"
+              alt="Второй слайд"
+            />
+          </div>
+          <div class="slide">
+            <img
+              loading="lazy"
+              src="./img/menu-3.jpg"
+              class="slider__img"
+              alt="Третий слайд"
+            />
+          </div>
+          <div class="slide"></div>
+          <img
+            loading="lazy"
+            src="./img/menu-4.jpg"
+            class="slider__img"
+            alt="Четвертый слайд"
+          />
+        </div>
+      </div>
+      <div class="slider-block">
+        <div class="slider-text">
+          <div class="slider-text__wrapper">
+            <p class="slider-text__desc">Салат бедняка</p>
+            <p class="slider-text__desc">Безаппеляционно вкусно!</p>
+            <p class="slider-text__desc">У кого изжога - отойдите от экрана</p>
+            <p class="slider-text__desc">Все гениальное просто</p>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <input
+            class="slider-controls__input"
+            type="radio"
+            name="toggle"
+            id="btn-1"
+            checked
+          />
+          <input
+            class="slider-controls__input"
+            type="radio"
+            name="toggle"
+            id="btn-2"
+          />
+          <input
+            class="slider-controls__input"
+            type="radio"
+            name="toggle"
+            id="btn-3"
+          />
+          <input
+            class="slider-controls__input"
+            type="radio"
+            name="toggle"
+            id="btn-4"
+          />
+          <label
+            class="slider-controls__label"
+            for="btn-1"
+            aria-label="Первый"
+          ></label>
+          <label
+            class="slider-controls__label"
+            for="btn-2"
+            aria-label="Второй"
+          ></label>
+          <label
+            class="slider-controls__label"
+            for="btn-3"
+            aria-label="Третий"
+          ></label>
+          <label
+            class="slider-controls__label"
+            for="btn-4"
+            aria-label="Четвертый"
+          ></label>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
