@@ -44,6 +44,7 @@ img {
 
 .slide {
   width: 100%;
+  transition: all 1s ease-in-out;
 }
 
 .slider__img {
@@ -92,6 +93,7 @@ img {
 .slider-text__desc {
   width: 100%;
   font-size: 2.5rem;
+  transition: all 1.2s ease-in-out;
 }
 
 #btn-1:checked ~ .slider__sliders > .slider__wrapper > .slide {
@@ -124,4 +126,28 @@ img {
 
 #btn-4:checked ~ .slider-block > .slider-text > .slider-text__wrapper > .slider-text__desc {
   transform: translateX(-300%);
+}
+
+#btn-1:checked ~ .slider-block > .slider-controls > .slider-controls__label:nth-child(1) {
+  background-color: brown;
+  border-color: #283136;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+#btn-2:checked ~ .slider-block > .slider-controls > .slider-controls__label:nth-child(2) {
+  background-color: brown;
+  border-color: #283136;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+#btn-3:checked ~ .slider-block > .slider-controls > .slider-controls__label:nth-child(3) {
+  background-color: brown;
+  border-color: #283136;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+#btn-4:checked ~ .slider-block > .slider-controls > .slider-controls__label:nth-child(4) {
+  background-color: brown;
+  border-color: #283136;
+  transition: background-color 0.5s, border-color 0.5s;
 }
